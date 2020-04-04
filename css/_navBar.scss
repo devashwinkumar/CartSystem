@@ -1,0 +1,151 @@
+/*Nav Bar Styling */
+
+.hamburger {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
+  position: fixed;
+  left: 2%;
+  top: 4%;
+  z-index: 5;
+  div {
+    align-self: flex-start;
+    height: 6px;
+    width: 100%;
+    background: $cOne;
+  }
+  .meat {
+    width: 75%;
+    transition: all 200ms ease-in-out;
+  }
+  .bottom-bun {
+    width: 50%;
+    transition: all 400ms ease-in-out;
+  }
+  &.dark {
+    div {
+      background: $cThree;
+    }
+  }
+}
+
+@keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.side-nav.side-nav--secondary {
+  @include padTopBot20();
+  background-color: $cThree;
+  background-image: none !important;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 99999;
+  left: -320px;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: 0 none;
+  border-radius: 0;
+  top: 0;
+  background-position: center;
+}
+
+/* Desktop Logo Styling */
+.side-nav__logo-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  a {
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    padding: 0 0 20px;
+  }
+  a img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+.side-nav__nav-links {
+  @include padTopBot20();
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+  li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+
+    font-family: $fTwo;
+
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    a {
+      padding: 15px;
+      line-height: 15px;
+      display: block;
+      color: $cFour !important;
+      cursor: pointer;
+    }
+    a.active {
+      color: $cOne;
+    }
+    a:hover {
+      color: $cThree;
+      background-color: $cOne;
+      text-decoration: none;
+    }
+  }
+}
+
+.side-nav__social-wrapper {
+  @include padTopBot20();
+  ul {
+    text-align: center;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 0 2px;
+    a {
+      color: $cFour;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  }
+}
+.side-nav__copyright-content-wrapper {
+  p {
+    font-size: 12px;
+    text-align: center;
+    color: $cFour;
+  }
+  .author {
+    opacity: 0.5;
+  }
+}
+
+.side-nav.open {
+  left: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}

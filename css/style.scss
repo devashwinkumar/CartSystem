@@ -1,0 +1,103 @@
+@import "./variables";
+@import "./mixins";
+
+// General
+.nooo {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+.wrapper {
+  height: auto !important;
+  position: relative;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+h5,
+h6 {
+  color: $cOne;
+  font-family: $fThree;
+}
+h2 {
+  color: $cThree;
+  font-family: $fTwo;
+}
+p {
+  color: $cThree;
+  font-family: $fOne;
+}
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+.color-one {
+  color: $cOne !important;
+}
+.color-two {
+  color: $cTwo !important;
+}
+.color-three {
+  color: $cThree !important;
+}
+.color-four {
+  color: $cFour !important;
+}
+.color-five {
+  color: $cFive !important;
+}
+.bg-five {
+  background-color: $cFive !important;
+}
+.bg-one {
+  background-color: $cThree;
+}
+
+//Padding
+.p-30 {
+  padding: 30px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.pr-75 {
+  padding-right: 75px;
+}
+
+//Margin
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mtb-20 {
+  margin: 20px 0;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+@import "./navBar";
+@import "./heroLanding";
+@import "./button";
+@import "./aboutUs";
+@import "./menu";
+@import "./footer";
+@import "./responsive";

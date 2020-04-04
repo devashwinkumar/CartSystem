@@ -1,0 +1,34 @@
+.btn {
+  outline: none;
+  padding: 12px 30px;
+  border-color: transparent !important;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: $cOne;
+  color: $cThree;
+}
+.btn-secondary {
+  background-color: $cThree;
+  color: $cFour;
+  transition: all 0.5s;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $cOne !important;
+  color: $cFour !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: $cThree !important;
+  color: $cOne !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
